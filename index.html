@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Список справ</h1>
+
+    <div id="motivation-message" class="hidden"></div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Усі</button>
+      <button class="filter-btn" data-filter="active">Невиконані</button>
+      <button class="filter-btn" data-filter="completed">Виконані</button>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Введіть нове завдання..." />
+      <select id="priority-select">
+        <option value="normal">Звичайне</option>
+        <option value="important">Важливе</option>
+        <option value="urgent">Дуже важливе</option>
+      </select>
+      <button id="add-task-btn">Додати</button>
+    </div>
+
+    <ul id="task-list"></ul>
+    <button id="clear-completed-btn">Очистити виконані</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
